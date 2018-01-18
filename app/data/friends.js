@@ -3,7 +3,7 @@
 var friendsArray = [
     {
     "name":"Michelle",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"http://images.clipartpanda.com/clipart-smiley-face-smiley_face_02.png",
     "scores":[
         5,
         5,
@@ -19,7 +19,7 @@ var friendsArray = [
   },
   {
     "name":"Lisa",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"http://images.clipartpanda.com/clipart-smiley-face-smiley_face_02.png",
     "scores":[
         1,
         2,
@@ -35,7 +35,7 @@ var friendsArray = [
   },
   {
     "name":"Michael",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"http://warpoets.org.uk/worldwar1/wp-content/uploads/sites/11/2014/12/Tennant4-250x250.jpg",
     "scores":[
         3,
         3,
@@ -51,7 +51,7 @@ var friendsArray = [
   },
   {
     "name":"Jean",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"http://images.clipartpanda.com/clipart-smiley-face-smiley_face_02.png",
     "scores":[
         1,
         1,
@@ -67,7 +67,7 @@ var friendsArray = [
   },
   {
     "name":"Catherine",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Twemoji_1f602.svg/250px-Twemoji_1f602.svg.png",
     "scores":[
         4,
         3,
@@ -83,7 +83,7 @@ var friendsArray = [
   },
   {
     "name":"Zack",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Twemoji_1f602.svg/250px-Twemoji_1f602.svg.png",
     "scores":[
         3,
         2,
@@ -99,7 +99,7 @@ var friendsArray = [
   },
   {
     "name":"Sherwin",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://bdn-data.s3.amazonaws.com/uploads/2012/05/RED-FOX-kit-018-1-250x250.jpg",
     "scores":[
         1,
         1,
@@ -114,8 +114,8 @@ var friendsArray = [
       ]
   },
   {
-    "name":"Edward",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Judy",
+    "photo":"https://78.media.tumblr.com/0928b3135e3bccd33eaec8ae652bca18/tumblr_o7k7u49wm51u6l4wto2_250.gif",
     "scores":[
         2,
         3,
