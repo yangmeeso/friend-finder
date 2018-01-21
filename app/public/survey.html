@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Friend-Finder</title>
+    <!-- jQuery Link -->
+    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 </head>
+
+<!-- Main Contents -->
 <body>
     <div class="container">
         <h1 class="text-left">Friend Finder</h1>
         <hr>
+        <!-- User's Input -->
         <div class="text-left">
             <h2 class="text-left">About You</h2>
             <form>
                 <div class="form-group">
                     <h3 class="text-left">Name (Required)</h3>
-                    <input type="name" class="form-control" id="userName" placeholder="Ex. Isabella Sotelo">
+                    <input type="name" class="form-control" id="name">
                     <h3 class="text-left">Link to Photo Image</h3>
-                    <input type="link" class="form-control" id="photoLink">
+                    <input type="photo" class="form-control" id="photo">
                 </div>
             </form>
             <hr>
             <br>
         </div>
 
+        <!-- Survey Questions -->
         <div class="text-left">
             <h2 class="text-left">Question 1. </h2>
             <h3 class="text-left">Your mind is always buzzing with unexplored ideas and plans.</h3>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="q1">
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -42,8 +48,7 @@
                 <h2 class="text-left">Question 2. </h2>
                 <h3 class="text-left">Generally speaking, you rely more on your experience than your imagination.</h3>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="q2">
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -57,8 +62,7 @@
                 <h2 class="text-left">Question 3. </h2>
                 <h3 class="text-left">You find it easy to stay relaxed and focused even when there is some pressure.</h3>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="q3">
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -72,8 +76,7 @@
                 <h2 class="text-left">Question 4. </h2>
                 <h3 class="text-left">You rarely do something just out of sheer curiosity.</h3>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="q4">
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -87,8 +90,7 @@
                 <h2 class="text-left">Question 5. </h2>
                 <h3 class="text-left">People can rarely upset you.</h3>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="q5">
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -102,8 +104,7 @@
                 <h2 class="text-left">Question 6. </h2>
                 <h3 class="text-left">It is often difficult for you to relate to other people’s feelings.</h3>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="q6">
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -117,8 +118,7 @@
                 <h2 class="text-left">Question 7. </h2>
                 <h3 class="text-left">In a discussion, truth should be more important than people’s sensitivities.</h3>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="q7">
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -132,8 +132,7 @@
                 <h2 class="text-left">Question 8. </h2>
                 <h3 class="text-left">You rarely get carried away by fantasies and ideas.</h3>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="q8">
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -147,8 +146,7 @@
                 <h2 class="text-left">Question 9. </h2>
                 <h3 class="text-left">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h3>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="q9">
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -162,8 +160,7 @@
                 <h2 class="text-left">Question 10. </h2>
                 <h3 class="text-left">You feel more energetic after spending time with a group of people.</h3>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="q10">
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -173,12 +170,103 @@
                 </div>
         </div>
         <br>
+        <!-- Submit Button -->
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="submitButton">Submit</button>
+        <hr>
+        <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/yangmeeso/friend-finder">GitHub Repo</a></p>
             </div>
         </footer>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Friend Recommendation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <h2 id="friendName"></h2>
+                <img id="friendPhoto" src=""></div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
 </body>
     
 </html>
+
+<script type="text/javascript">
+$("#submitButton").on("click", function(event) {
+    event.preventDefault();
+    function validation() {
+        var isValid = true;
+        var userInfo = $(".form-control").each();
+        for (let i = 0; i < userInfo.length; i++) {
+            if(userInfo.val() === "") {
+                isValid = false;
+            } else {
+                return isValid;
+            }
+        }
+    }
+
+    if(validation()) {
+        var userInput = {
+            "name": $("#name").val().trim(),
+            "photo": $("#photo").val().trim(),
+            "score": [
+                $("#q1").val().trim(),
+                $("#q2").val().trim(),
+                $("#q3").val().trim(),
+                $("#q4").val().trim(),
+                $("#q5").val().trim(),
+                $("#q6").val().trim(),
+                $("#q7").val().trim(),
+                $("#q8").val().trim(),
+                $("#q9").val().trim(),
+                $("#q10").val().trim()
+            ]
+        };
+
+        console.log(userInput);
+
+        $.post('/api/friends', userinput,function(data) {
+            if(data) {
+                $("#friendName").text(data.name);
+                $("#friendPhoto").attr("src", data.photo);
+                $("$modal").modal("toggle");
+            }
+        })
+    } else {
+        alert("Please provide your name and link of photo.");
+    }
+
+    // Equivalent to: 
+    //     $.ajax({
+    //     url: "/api/friends",
+    //     method: "POST",
+    //     data: userInput
+    // }).then(function(data) {    
+    // ...
+    // })
+
+
+});
+
+</script>
+
+
+
+

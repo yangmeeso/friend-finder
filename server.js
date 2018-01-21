@@ -9,7 +9,8 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 // bodyParser is to parse incoming request bodies in a middleware before your handlers, available under the req.body property.
-app.use(bodyParser.urlencoded({ enxtended: true }));
+// when it's 'false', the value can be a string or array. when it's 'true', it could be any form. 
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // A map of how to respond when users request data from URLs. A link connects files from other locations.

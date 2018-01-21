@@ -9,11 +9,12 @@ app.get("/api/friends", function(req, res) {
 });
 
 app.post("/api/friends", function(req, res) {
+    console.log(req.body);
     var 
     var bestMatch = 0;
     var 
 
-    for (let i = 0; i< friendsList.length; i++){
+    for (let i = 0; i < friendsList.length; i++){
         
         if (i === 0) {
             biggestNumberSoFar = thisArray[0];
