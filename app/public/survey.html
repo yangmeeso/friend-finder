@@ -210,18 +210,23 @@
 <script type="text/javascript">
 $("#submitButton").on("click", function(event) {
     event.preventDefault();
+
+    // Validate user's profile is not empty.
     function validation() {
         var isValid = true;
-        var userInfo = $(".form-control").each();
-        for (let i = 0; i < userInfo.length; i++) {
-            if(userInfo.val() === "") {
-                isValid = false;
-            } else {
-                return isValid;
+        var userInfo = $(".form-control").each(function() {
+            for (let i = 0; i < userInfo.length; i++) {
+                if(userInfo.val() === "") {
+                    isValid = false;
+                } else {
+                    return isValid;
+                }
             }
-        }
-    }
+        });
 
+    };
+
+    // Catch the user's input.
     if(validation()) {
         var userInput = {
             "name": $("#name").val().trim(),
@@ -242,13 +247,15 @@ $("#submitButton").on("click", function(event) {
 
         console.log(userInput);
 
-        $.post('/api/friends', userinput,function(data) {
+        // Then, push data into modal for friend result.
+        $.post('/api/friends', userInput,function(data) {
             if(data) {
                 $("#friendName").text(data.name);
                 $("#friendPhoto").attr("src", data.photo);
                 $("$modal").modal("toggle");
             }
         })
+    // User's guidance as part of validation to provide necessary information for friend search.   
     } else {
         alert("Please provide your name and link of photo.");
     }
