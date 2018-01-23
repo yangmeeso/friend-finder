@@ -214,15 +214,29 @@ $("#submitButton").on("click", function(event) {
     // Validate user's profile is not empty.
     function validation() {
         var isValid = true;
-        var userInfo = $(".form-control").each(function() {
-            for (let i = 0; i < userInfo.length; i++) {
-                if(userInfo.val() === "") {
-                    isValid = false;
-                } else {
-                    return isValid;
-                }
-            }
-        });
+        //$(".form-control").each(function(){
+        //    console.log("values: " +  $(this).text());
+        //})
+
+        if($("#name").val() != "" && $("#photo").val() != "")
+        {
+            isValid = false;
+        }
+        else{
+            isValid = true
+        }
+
+
+        //var userInfo = $(".form-control").each(function() {
+            //for (let i = 0; i < userInfo.length; i++) {
+            //    if(userInfo.val() === "") {
+            //        isValid = false;
+            //    } else {
+            //        return isValid;
+            //    }
+            //}
+        //});
+        return isValid;
 
     };
 

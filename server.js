@@ -6,7 +6,7 @@ var bodyParser = require("body-parser");
 var app = express();
 
 // Initiating an application port.
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3001;
 
 // bodyParser is to parse incoming request bodies in a middleware before your handlers, available under the req.body property.
 // when it's 'false', the value can be a string or array. when it's 'true', it could be any form. 
