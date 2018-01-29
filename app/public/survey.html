@@ -203,10 +203,6 @@
         </div>
     </div>
 
-</body>
-    
-</html>
-
 <script type="text/javascript">
 $("#submitButton").on("click", function(event) {
     event.preventDefault();
@@ -214,30 +210,15 @@ $("#submitButton").on("click", function(event) {
     // Validate user's profile is not empty.
     function validation() {
         var isValid = true;
-        //$(".form-control").each(function(){
-        //    console.log("values: " +  $(this).text());
-        //})
 
         if($("#name").val() != "" && $("#photo").val() != "")
-        {
-            isValid = false;
-        }
-        else{
-            isValid = true
-        }
+            {
+                isValid = false;
+            } else {
+                isValid = true
+            }
 
-
-        //var userInfo = $(".form-control").each(function() {
-            //for (let i = 0; i < userInfo.length; i++) {
-            //    if(userInfo.val() === "") {
-            //        isValid = false;
-            //    } else {
-            //        return isValid;
-            //    }
-            //}
-        //});
         return isValid;
-
     };
 
     // Catch the user's input.
@@ -262,17 +243,17 @@ $("#submitButton").on("click", function(event) {
         console.log(userInput);
 
         // Then, push data into modal for friend result.
-        $.post('/api/friends', userInput,function(data) {
+        $.post('/api/friends', userInput, function(data) {
             if(data) {
                 $("#friendName").text(data.name);
                 $("#friendPhoto").attr("src", data.photo);
                 $("$modal").modal("toggle");
             }
-        })
+            else {
+                alert("Please provide your name and link of photo.");
+            }
+        });
     // User's guidance as part of validation to provide necessary information for friend search.   
-    } else {
-        alert("Please provide your name and link of photo.");
-    }
 
     // Equivalent to: 
     //     $.ajax({
@@ -283,11 +264,12 @@ $("#submitButton").on("click", function(event) {
     // ...
     // })
 
-
+    };
 });
 
 </script>
-
+</body>    
+</html>
 
 
 
